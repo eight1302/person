@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/index.css">
+		<link rel="stylesheet" type="text/css" href="../../styles/include.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/photo.css">
+</head>
+<title>项目集合</title>
+<body>
+	<section id="blog">
+		<header></header>
+		<div class="col-md-12 col-sm-12 col-xl-12 one main">
+			<section class="col-md-12 col-sm-12 col-xl-12 one footer_st">
+				<div class="col-md-12 col-sm-12 col-xl-12 me">
+					<h4 style="padding-bottom: 10px;border-bottom: 1px solid #eee;">个人项目集合</h4>
+					<div class="col-md-12 col-sm-12 col-xl-12 one">
+						<section class="col-md-12 col-sm-12 col-xl-12 one photo">
+							<ul>
+								<li class="col-md-3 col-sm-3 col-xl-3 li_info" v-for = "date in photo">
+									<div class="photo_li">
+										<img v-bind:src="[date.img]">
+									</div>
+									<div class="info" style="text-align: center;">
+										<a :href="[date.url]" class="url" style="color: #000;">
+											<span>{{date.name}}</span><br />
+										</a>
+									</div>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="col-md-12 col-sm-12 col-xl-12 one" style="position: fixed;width: 100%;"></footer>
+	</section>
+</body>
+	<script type="text/javascript" src="../../js/vue.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/person.js"></script>
+	<script type="text/javascript" src="../../js/include.js"></script>
+</html>
